@@ -1,0 +1,54 @@
+﻿@model WebCurs2.ViewModels.ProductViewModel
+
+@{
+    string link = "single-product/" + Model.ProductId;
+}
+
+
+<div class="product">
+
+    <span class="badges">
+        @if (@Model.DiscountPercentage!=null)
+        {
+            <span class="sale">-@Model.DiscountPercentage%</span> 
+        }
+        @if (@Model.IsNew==true)
+        {
+            <span class="new">New</span>
+        }
+        @if (@Model.IsSale==true)
+        {
+            <span class="new">Sale</span>
+        }
+    </span>
+    
+    <div class="thumb">
+        <a href="@link" class="image">
+            <img src="~/images/product-image/1.webp" alt="Product" />
+            <img class="hover-image" src="@Model.ImgSrc" alt="Product" />
+        </a>
+    </div>
+    <div class="content">
+        <span class="category"><a href="@Model.CategoryLink">@Model.Category</a></span>  
+        <h5 class="title"><a href="@link">@Model.Title
+            </a>
+        </h5>
+        <span class="price">
+            @if (@Model.OldPrice!=null)
+            {
+                <span class="old">@Model.OldPrice @Model.Currency</span>
+            }
+            
+            <span class="new">@Model.Price @Model.Currency</span>
+        </span>
+    </div>
+    <div class="actions">
+        <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+            class="pe-7s-shopbag"></i></button>
+        <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
+                class="pe-7s-like"></i></button>
+        <button class="action quickview" data-link-action="quickview" title="Quick view" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="pe-7s-look"></i></button>
+        <button class="action compare" title="Compare" data-bs-toggle="modal" data-bs-target="#exampleModal-Compare"><i
+                class="pe-7s-refresh-2"></i></button>
+    </div>
+</div>

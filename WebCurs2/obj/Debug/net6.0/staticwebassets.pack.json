@@ -1,0 +1,925 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\WebCurs2.bundle.scp.css",
+      "PackagePath": "staticwebassets\\WebCurs2.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\css\\animate.min.css",
+      "PackagePath": "staticwebassets\\css\\animate.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\css\\font.awesome.css",
+      "PackagePath": "staticwebassets\\css\\font.awesome.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\css\\jquery-ui.min.css",
+      "PackagePath": "staticwebassets\\css\\jquery-ui.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\css\\pe-icon-7-stroke.css",
+      "PackagePath": "staticwebassets\\css\\pe-icon-7-stroke.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\css\\plugins.min.css",
+      "PackagePath": "staticwebassets\\css\\plugins.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\css\\style.min.css",
+      "PackagePath": "staticwebassets\\css\\style.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\css\\swiper-bundle.min.css",
+      "PackagePath": "staticwebassets\\css\\swiper-bundle.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\css\\venobox.css",
+      "PackagePath": "staticwebassets\\css\\venobox.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\fonts\\Pe-icon-7-stroke.eot",
+      "PackagePath": "staticwebassets\\fonts\\Pe-icon-7-stroke.eot"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\fonts\\Pe-icon-7-stroke.svg",
+      "PackagePath": "staticwebassets\\fonts\\Pe-icon-7-stroke.svg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\fonts\\Pe-icon-7-stroke.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Pe-icon-7-stroke.ttf"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\fonts\\Pe-icon-7-stroke.woff",
+      "PackagePath": "staticwebassets\\fonts\\Pe-icon-7-stroke.woff"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\404\\bg-404.webp",
+      "PackagePath": "staticwebassets\\images\\404\\bg-404.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\about\\breadcrunb-bg.webp",
+      "PackagePath": "staticwebassets\\images\\about\\breadcrunb-bg.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\about\\promo-video-img.webp",
+      "PackagePath": "staticwebassets\\images\\about\\promo-video-img.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\banner\\1.webp",
+      "PackagePath": "staticwebassets\\images\\banner\\1.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\banner\\2.webp",
+      "PackagePath": "staticwebassets\\images\\banner\\2.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\banner\\3.webp",
+      "PackagePath": "staticwebassets\\images\\banner\\3.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\banner\\4.webp",
+      "PackagePath": "staticwebassets\\images\\banner\\4.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\banner\\5.webp",
+      "PackagePath": "staticwebassets\\images\\banner\\5.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\banner\\6.webp",
+      "PackagePath": "staticwebassets\\images\\banner\\6.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\banner\\7.webp",
+      "PackagePath": "staticwebassets\\images\\banner\\7.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\banner\\8.webp",
+      "PackagePath": "staticwebassets\\images\\banner\\8.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\banner\\9.webp",
+      "PackagePath": "staticwebassets\\images\\banner\\9.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\banner\\menu-banner.png",
+      "PackagePath": "staticwebassets\\images\\banner\\menu-banner.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\blog-image\\1.webp",
+      "PackagePath": "staticwebassets\\images\\blog-image\\1.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\blog-image\\2.webp",
+      "PackagePath": "staticwebassets\\images\\blog-image\\2.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\blog-image\\3.webp",
+      "PackagePath": "staticwebassets\\images\\blog-image\\3.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\blog-image\\4.webp",
+      "PackagePath": "staticwebassets\\images\\blog-image\\4.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\blog-image\\5.webp",
+      "PackagePath": "staticwebassets\\images\\blog-image\\5.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\blog-image\\comment-img-1.webp",
+      "PackagePath": "staticwebassets\\images\\blog-image\\comment-img-1.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\blog-image\\comment-img-2.webp",
+      "PackagePath": "staticwebassets\\images\\blog-image\\comment-img-2.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\blog-image\\comment-img-3.webp",
+      "PackagePath": "staticwebassets\\images\\blog-image\\comment-img-3.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\blog-image\\post-1.webp",
+      "PackagePath": "staticwebassets\\images\\blog-image\\post-1.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\blog-image\\post-2.webp",
+      "PackagePath": "staticwebassets\\images\\blog-image\\post-2.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\blog-image\\post-3.webp",
+      "PackagePath": "staticwebassets\\images\\blog-image\\post-3.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\blog-image\\post-4.webp",
+      "PackagePath": "staticwebassets\\images\\blog-image\\post-4.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\blog-image\\quate-icon.png",
+      "PackagePath": "staticwebassets\\images\\blog-image\\quate-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\blog-image\\side-image.webp",
+      "PackagePath": "staticwebassets\\images\\blog-image\\side-image.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\blog-image\\single-blog.webp",
+      "PackagePath": "staticwebassets\\images\\blog-image\\single-blog.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\coming-soon\\coming-soon-bg.webp",
+      "PackagePath": "staticwebassets\\images\\coming-soon\\coming-soon-bg.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\fashion\\fashion-bg.webp",
+      "PackagePath": "staticwebassets\\images\\fashion\\fashion-bg.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\favicon.ico",
+      "PackagePath": "staticwebassets\\images\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\feature-image\\1.webp",
+      "PackagePath": "staticwebassets\\images\\feature-image\\1.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\feature-image\\2.webp",
+      "PackagePath": "staticwebassets\\images\\feature-image\\2.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\feature-image\\3.webp",
+      "PackagePath": "staticwebassets\\images\\feature-image\\3.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\hero\\bg\\hero-bg-1.webp",
+      "PackagePath": "staticwebassets\\images\\hero\\bg\\hero-bg-1.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\hero\\bg\\hero-bg-2-1.webp",
+      "PackagePath": "staticwebassets\\images\\hero\\bg\\hero-bg-2-1.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\hero\\inner-img\\hero-1-1.png",
+      "PackagePath": "staticwebassets\\images\\hero\\inner-img\\hero-1-1.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\hero\\inner-img\\hero-1-2.png",
+      "PackagePath": "staticwebassets\\images\\hero\\inner-img\\hero-1-2.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\hero\\inner-img\\hero-2-1.png",
+      "PackagePath": "staticwebassets\\images\\hero\\inner-img\\hero-2-1.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\icons\\1.png",
+      "PackagePath": "staticwebassets\\images\\icons\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\icons\\2.png",
+      "PackagePath": "staticwebassets\\images\\icons\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\icons\\3.png",
+      "PackagePath": "staticwebassets\\images\\icons\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\icons\\cmpted_logo.png",
+      "PackagePath": "staticwebassets\\images\\icons\\cmpted_logo.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\icons\\contact-1.png",
+      "PackagePath": "staticwebassets\\images\\icons\\contact-1.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\icons\\contact-2.png",
+      "PackagePath": "staticwebassets\\images\\icons\\contact-2.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\icons\\contact-3.png",
+      "PackagePath": "staticwebassets\\images\\icons\\contact-3.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\icons\\icon-youtube-play.png",
+      "PackagePath": "staticwebassets\\images\\icons\\icon-youtube-play.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\icons\\payment.png",
+      "PackagePath": "staticwebassets\\images\\icons\\payment.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\logo\\footer-logo.png",
+      "PackagePath": "staticwebassets\\images\\logo\\footer-logo.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\logo\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\partner\\1.png",
+      "PackagePath": "staticwebassets\\images\\partner\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\partner\\2.png",
+      "PackagePath": "staticwebassets\\images\\partner\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\partner\\3.png",
+      "PackagePath": "staticwebassets\\images\\partner\\3.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\partner\\4.png",
+      "PackagePath": "staticwebassets\\images\\partner\\4.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\product-image\\1.webp",
+      "PackagePath": "staticwebassets\\images\\product-image\\1.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\product-image\\2.webp",
+      "PackagePath": "staticwebassets\\images\\product-image\\2.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\product-image\\3.webp",
+      "PackagePath": "staticwebassets\\images\\product-image\\3.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\product-image\\4.webp",
+      "PackagePath": "staticwebassets\\images\\product-image\\4.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\product-image\\5.webp",
+      "PackagePath": "staticwebassets\\images\\product-image\\5.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\product-image\\6.webp",
+      "PackagePath": "staticwebassets\\images\\product-image\\6.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\product-image\\7.webp",
+      "PackagePath": "staticwebassets\\images\\product-image\\7.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\product-image\\8.webp",
+      "PackagePath": "staticwebassets\\images\\product-image\\8.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\product-image\\9.webp",
+      "PackagePath": "staticwebassets\\images\\product-image\\9.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\product-image\\small-image\\1.webp",
+      "PackagePath": "staticwebassets\\images\\product-image\\small-image\\1.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\product-image\\small-image\\2.webp",
+      "PackagePath": "staticwebassets\\images\\product-image\\small-image\\2.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\product-image\\small-image\\3.webp",
+      "PackagePath": "staticwebassets\\images\\product-image\\small-image\\3.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\product-image\\small-image\\4.webp",
+      "PackagePath": "staticwebassets\\images\\product-image\\small-image\\4.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\product-image\\small-image\\5.webp",
+      "PackagePath": "staticwebassets\\images\\product-image\\small-image\\5.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\product-image\\zoom-image\\1.webp",
+      "PackagePath": "staticwebassets\\images\\product-image\\zoom-image\\1.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\product-image\\zoom-image\\2.webp",
+      "PackagePath": "staticwebassets\\images\\product-image\\zoom-image\\2.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\product-image\\zoom-image\\3.webp",
+      "PackagePath": "staticwebassets\\images\\product-image\\zoom-image\\3.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\product-image\\zoom-image\\4.webp",
+      "PackagePath": "staticwebassets\\images\\product-image\\zoom-image\\4.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\product-image\\zoom-image\\5.webp",
+      "PackagePath": "staticwebassets\\images\\product-image\\zoom-image\\5.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\review-image\\1.png",
+      "PackagePath": "staticwebassets\\images\\review-image\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\review-image\\2.png",
+      "PackagePath": "staticwebassets\\images\\review-image\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\team\\1.webp",
+      "PackagePath": "staticwebassets\\images\\team\\1.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\team\\2.webp",
+      "PackagePath": "staticwebassets\\images\\team\\2.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\team\\3.webp",
+      "PackagePath": "staticwebassets\\images\\team\\3.webp"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\testimonial\\1.png",
+      "PackagePath": "staticwebassets\\images\\testimonial\\1.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\testimonial\\2.png",
+      "PackagePath": "staticwebassets\\images\\testimonial\\2.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\images\\testimonial\\quote-shape.png",
+      "PackagePath": "staticwebassets\\images\\testimonial\\quote-shape.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\js\\main.min.js",
+      "PackagePath": "staticwebassets\\js\\main.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\js\\plugins.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\js\\plugins\\jquery-ui.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\jquery-ui.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\js\\plugins\\jquery.countdown.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\jquery.countdown.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\js\\plugins\\mailchimp-ajax.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\mailchimp-ajax.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\js\\plugins\\scrollUp.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\scrollUp.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\js\\plugins\\swiper-bundle.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\swiper-bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\js\\plugins\\venobox.min.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\venobox.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\js\\vendor.min.js",
+      "PackagePath": "staticwebassets\\js\\vendor.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\js\\vendor\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\js\\vendor\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\js\\vendor\\jquery-3.6.0.min.js",
+      "PackagePath": "staticwebassets\\js\\vendor\\jquery-3.6.0.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\js\\vendor\\jquery-migrate-3.3.2.min.js",
+      "PackagePath": "staticwebassets\\js\\vendor\\jquery-migrate-3.3.2.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\js\\vendor\\modernizr-3.11.2.min.js",
+      "PackagePath": "staticwebassets\\js\\vendor\\modernizr-3.11.2.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\_about.scss",
+      "PackagePath": "staticwebassets\\scss\\_about.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\_animation.scss",
+      "PackagePath": "staticwebassets\\scss\\_animation.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\_common.scss",
+      "PackagePath": "staticwebassets\\scss\\_common.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\_component.scss",
+      "PackagePath": "staticwebassets\\scss\\_component.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\_contact.scss",
+      "PackagePath": "staticwebassets\\scss\\_contact.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\_footer.scss",
+      "PackagePath": "staticwebassets\\scss\\_footer.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\_header.scss",
+      "PackagePath": "staticwebassets\\scss\\_header.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\_hero.scss",
+      "PackagePath": "staticwebassets\\scss\\_hero.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\_intro.scss",
+      "PackagePath": "staticwebassets\\scss\\_intro.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\_mixins.scss",
+      "PackagePath": "staticwebassets\\scss\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\_navigation.scss",
+      "PackagePath": "staticwebassets\\scss\\_navigation.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\_responsive-class.scss",
+      "PackagePath": "staticwebassets\\scss\\_responsive-class.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\_shop.scss",
+      "PackagePath": "staticwebassets\\scss\\_shop.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\scss\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\component\\_banner.scss",
+      "PackagePath": "staticwebassets\\scss\\component\\_banner.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\component\\_blog.scss",
+      "PackagePath": "staticwebassets\\scss\\component\\_blog.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\component\\_brand-slider.scss",
+      "PackagePath": "staticwebassets\\scss\\component\\_brand-slider.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\component\\_breadcrumd.scss",
+      "PackagePath": "staticwebassets\\scss\\component\\_breadcrumd.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\component\\_button.scss",
+      "PackagePath": "staticwebassets\\scss\\component\\_button.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\component\\_category.scss",
+      "PackagePath": "staticwebassets\\scss\\component\\_category.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\component\\_deal.scss",
+      "PackagePath": "staticwebassets\\scss\\component\\_deal.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\component\\_fashion.scss",
+      "PackagePath": "staticwebassets\\scss\\component\\_fashion.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\component\\_feature-product.scss",
+      "PackagePath": "staticwebassets\\scss\\component\\_feature-product.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\component\\_feature.scss",
+      "PackagePath": "staticwebassets\\scss\\component\\_feature.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\component\\_product.scss",
+      "PackagePath": "staticwebassets\\scss\\component\\_product.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\component\\_slider-nav.scss",
+      "PackagePath": "staticwebassets\\scss\\component\\_slider-nav.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\component\\_testimonial.scss",
+      "PackagePath": "staticwebassets\\scss\\component\\_testimonial.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\header\\_header.scss",
+      "PackagePath": "staticwebassets\\scss\\header\\_header.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\header\\_mobile-header.scss",
+      "PackagePath": "staticwebassets\\scss\\header\\_mobile-header.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\header\\_offcanvas.scss",
+      "PackagePath": "staticwebassets\\scss\\header\\_offcanvas.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\shop\\_404.scss",
+      "PackagePath": "staticwebassets\\scss\\shop\\_404.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\shop\\_account.scss",
+      "PackagePath": "staticwebassets\\scss\\shop\\_account.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\shop\\_cart.scss",
+      "PackagePath": "staticwebassets\\scss\\shop\\_cart.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\shop\\_checkout.scss",
+      "PackagePath": "staticwebassets\\scss\\shop\\_checkout.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\shop\\_coming-soon.scss",
+      "PackagePath": "staticwebassets\\scss\\shop\\_coming-soon.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\shop\\_compare.scss",
+      "PackagePath": "staticwebassets\\scss\\shop\\_compare.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\shop\\_empty-cart.scss",
+      "PackagePath": "staticwebassets\\scss\\shop\\_empty-cart.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\shop\\_faq.scss",
+      "PackagePath": "staticwebassets\\scss\\shop\\_faq.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\shop\\_login.scss",
+      "PackagePath": "staticwebassets\\scss\\shop\\_login.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\shop\\_modal.scss",
+      "PackagePath": "staticwebassets\\scss\\shop\\_modal.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\shop\\_order-tracking.scss",
+      "PackagePath": "staticwebassets\\scss\\shop\\_order-tracking.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\shop\\_product-single.scss",
+      "PackagePath": "staticwebassets\\scss\\shop\\_product-single.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\shop\\_shop-category.scss",
+      "PackagePath": "staticwebassets\\scss\\shop\\_shop-category.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\shop\\_single-product-gallery.scss",
+      "PackagePath": "staticwebassets\\scss\\shop\\_single-product-gallery.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\shop\\_single-product-group.scss",
+      "PackagePath": "staticwebassets\\scss\\shop\\_single-product-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\shop\\_single-product-slider.scss",
+      "PackagePath": "staticwebassets\\scss\\shop\\_single-product-slider.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\shop\\_single-product-tabstyle-2.scss",
+      "PackagePath": "staticwebassets\\scss\\shop\\_single-product-tabstyle-2.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\shop\\_single-product-variable.scss",
+      "PackagePath": "staticwebassets\\scss\\shop\\_single-product-variable.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\shop\\_thank-you.scss",
+      "PackagePath": "staticwebassets\\scss\\shop\\_thank-you.scss"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\WebCurs2\\WebCurs2\\wwwroot\\scss\\style.scss",
+      "PackagePath": "staticwebassets\\scss\\style.scss"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.WebCurs2.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.WebCurs2.props",
+      "PackagePath": "build\\WebCurs2.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.WebCurs2.props",
+      "PackagePath": "buildMultiTargeting\\WebCurs2.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.WebCurs2.props",
+      "PackagePath": "buildTransitive\\WebCurs2.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
