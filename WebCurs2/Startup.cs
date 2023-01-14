@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using WebCurs2.Data;
+using WebCurs2.Models;
 
 namespace WebCurs2
 {
@@ -36,8 +37,16 @@ namespace WebCurs2
                 .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
+
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddScoped(sp => ShopCart.GetCart(sp));
+
+
             services.AddControllersWithViews();
             services.AddRazorPages();
+
+            services.AddMemoryCache();
+            services.AddSession();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -55,6 +64,8 @@ namespace WebCurs2
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseSession();
+
 
             app.UseRouting();
 

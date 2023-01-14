@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using WebCurs2.Models;
 
 namespace WebCurs2.Data
 {
@@ -91,6 +92,9 @@ namespace WebCurs2.Data
 
     public static class Navigations
     {
-
+        public static readonly Navigate Blog = new Navigate
+        {
+            
+        };
     }
 }

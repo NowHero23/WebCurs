@@ -39,7 +39,7 @@
                 <span class="old">@Model.OldPrice @Model.Currency</span>
             }
             
-            <span class="new">@Model.Price @Model.Currency</span>
+            <span class="new">@Model.Price.ToString("c") @Model.Currency</span>
         </span>
     </div>
     <div class="actions">

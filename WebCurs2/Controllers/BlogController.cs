@@ -5,11 +5,11 @@ using WebCurs2.ViewModels;
 
 namespace WebCurs2.Controllers
 {
-    public class HomeController : Controller
+    public class BlogController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<BlogController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public BlogController(ILogger<BlogController> logger)
         {
             _logger = logger;
         }
