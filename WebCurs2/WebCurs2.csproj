@@ -8,7 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Data\Domain\Entities\" />
     <Folder Include="wwwroot\scss\Pages\" />
   </ItemGroup>
 

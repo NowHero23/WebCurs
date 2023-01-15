@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace WebCurs2.Models
+namespace WebCurs2.Data.Domain.Entities
 {
     public class ProdectImage
     {

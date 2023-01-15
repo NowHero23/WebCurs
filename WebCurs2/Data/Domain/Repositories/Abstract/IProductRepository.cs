@@ -1,4 +1,4 @@
-﻿using WebCurs2.Models;
+﻿using WebCurs2.Data.Domain.Entities;
 
 namespace WebCurs2.Data.Domain.Repositories.Abstract
 {
@@ -6,6 +6,11 @@ namespace WebCurs2.Data.Domain.Repositories.Abstract
     {
         public IEnumerable<Product> Products { get; }
 
-        public Product GetProductById(int id);
+        public Product GetProductById(long id);
+
+        public Task<bool> CreateAsync(Product product);
+
+        public Task DeleteAsync(Product entity);
+        public Task SeveAsync(Product entity);
     }
 }

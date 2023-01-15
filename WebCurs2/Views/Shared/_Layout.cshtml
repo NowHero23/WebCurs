@@ -4,14 +4,9 @@
     
     @await Html.PartialAsync("MetatagsPartial")
 
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/WebCurs2.styles.css" asp-append-version="true" />
     @await Html.PartialAsync("CssPartial")
 </head>
 <body>
-    
-
 
     <div class="main-wrapper" role="main">
         @await Html.PartialAsync("HeaderPartial")
@@ -28,12 +23,8 @@
     </div>
 
 
+    @await Html.PartialAsync("ScriptsPartial")
     
-
-    
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

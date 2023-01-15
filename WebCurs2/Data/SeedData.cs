@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using WebCurs2.Models;
+using WebCurs2.Data.Domain.Entities;
+using WebCurs2.Data.Domain.Repositories.EntityFramework;
 
 namespace WebCurs2.Data
 {
@@ -35,6 +36,33 @@ namespace WebCurs2.Data
                 await userMgr.AddToRoleAsync(commonUser, RoleNames.User);
                 await userMgr.AddToRoleAsync(moderatorUser, RoleNames.Moderator);
             }
+
+
+
+            var context = provider.GetService<ApplicationDbContext>();
+            var navRep = new EFNavigateRepository(context);
+
+            foreach (var el in DefaultNavigations.AllNavigations)
+            {
+                var nav = await navRep.GetByNameAsync(el.Name);
+                    
+                if (nav == null)
+                {
+                    try
+                    {
+                        bool result = navRep.CreateAsync(el).Result;
+                        
+                    }
+                    catch (Exception ex)
+                    {
+                        throw new Exception(ex.Message); 
+                    }
+ 
+                }
+            }
+
+
+            context.SaveChangesAsync();
         }
     }
 
@@ -90,11 +118,62 @@ namespace WebCurs2.Data
     }
 
 
-    public static class Navigations
+    public static class DefaultNavigations
     {
+        public static readonly Navigate Home = new Navigate
+        {
+            Name = "Home",
+            Url = "/",
+            ParentId = null,
+            OrderId = 0,
+        };
+        public static readonly Navigate About = new Navigate
+        {
+            Name = "About",
+            Url = "/About/",
+            ParentId = null,
+            OrderId = 1,
+        };
+        public static readonly Navigate Catalog = new Navigate
+        {
+            Name = "Catalog",
+            Url = "/Catalog/",
+            ParentId = null,
+            OrderId = 2,
+        };
         public static readonly Navigate Blog = new Navigate
         {
-            
+            Name = "Blog",
+            Url = "/Blog/",
+            ParentId = null,
+            OrderId = 3,
         };
+        public static readonly Navigate Contact = new Navigate
+        {
+            Name = "Contact",
+            Url = "/Contact/",
+            ParentId = null,
+            OrderId = 4,
+        };
+        public static readonly Navigate FAQ = new Navigate
+        {
+            Name = "FAQ",
+            Url = "/FAQ/",
+            ParentId = null,
+            OrderId = 5,
+        };
+
+        public static IEnumerable<Navigate> AllNavigations
+        {
+            get
+            {
+                yield return Home;
+                yield return About;
+                yield return Catalog;
+                yield return Blog;
+                yield return Contact;
+                yield return FAQ;
+            }
+        }
     }
 }

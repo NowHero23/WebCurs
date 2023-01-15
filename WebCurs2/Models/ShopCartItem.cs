@@ -1,4 +1,6 @@
-﻿namespace WebCurs2.Models
+﻿using WebCurs2.Data.Domain.Entities;
+
+namespace WebCurs2.Models
 {
     public class ShopCartItem
     {

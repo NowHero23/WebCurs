@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System.Drawing.Printing;
+using WebCurs2.Data.Domain.Entities;
 using WebCurs2.Models;
 
 namespace WebCurs2.Data

@@ -35,28 +35,7 @@ namespace WebCurs2.Controllers
             return RedirectToAction("Index");
         }
 
-        public IActionResult OffCanvasCartParticial()
-        {
-            var items = _shopCart.GetShopItems();
-            _shopCart.ListShopItems = items;
+        
 
-            var obj = new ShopCartViewModel { shopCart = _shopCart };
-
-            
-
-            return PartialView("OffCanvasCart", obj);
-        }
-
-        public ShopCartViewModel testFunc()
-        {
-            var items = _shopCart.GetShopItems();
-            _shopCart.ListShopItems = items;
-
-            var obj = new ShopCartViewModel { shopCart = _shopCart };
-
-
-
-            return obj;
-        }
     }
 }

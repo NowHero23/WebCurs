@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using WebCurs2.Data;
+using WebCurs2.Data.Domain.Entities;
 
 namespace WebCurs2.Models
 {

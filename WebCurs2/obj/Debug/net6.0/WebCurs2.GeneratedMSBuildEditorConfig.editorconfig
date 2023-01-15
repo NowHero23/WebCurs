@@ -200,8 +200,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTmF2QmFyXERlc2N0b3AuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/WebCurs2/WebCurs2/Views/Shared/Components/NavBar/Offcanvas.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTmF2QmFyXE9mZmNhbnZhcy5jc2h0bWw=
+[C:/Users/User/source/repos/WebCurs2/WebCurs2/Views/Shared/Components/NavBar/Mobil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTmF2QmFyXE1vYmlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/User/source/repos/WebCurs2/WebCurs2/Views/Shared/Components/OffCanvasCart/Default.cshtml]

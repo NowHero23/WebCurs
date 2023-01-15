@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using WebCurs2.Models;
 using WebCurs2.Data.Domain.Repositories.Abstract;
+using System.Collections;
+using WebCurs2.Data.Domain.Entities;
 
 namespace WebCurs2.Data.Domain.Repositories.EntityFramework
 {
@@ -12,69 +13,43 @@ namespace WebCurs2.Data.Domain.Repositories.EntityFramework
             _context = context;
         }
 
+        public async Task<bool> CreateAsync(Navigate navigate)
+        {
+            return _context.Navigates.AddAsync(navigate).IsCompletedSuccessfully;
+        }
+
         public async Task<List<Navigate>> GetAllAsync()
         {
             return await _context.Navigates.ToListAsync();
         }
 
-        /*public async Task<User?> GetUser(string email,string password)
+        public async Task<Navigate?> GetByNameAsync(string name)
         {
-            var user = _context.Users.FirstOrDefaultAsync(u => u.Email == email);
-            if(user!= null&&)
-
-
-            return await _context.Users.FindAsync();
-
-
-        }*/
-
-
-
-        /*public async Task DeleteAsync(User user)
-        {
-            _context.Remove(user);
-            await _context.SaveChangesAsync();
+            return await _context.Navigates.FirstOrDefaultAsync(n => n.Name == name);
         }
 
-        public async Task<List<User>> GetAllAsync()
+        public async Task<List<Navigate>> GetChildrensByParentIdAsync(long id)
         {
-            return await _context.Users.ToListAsync();
-        }
-
-        public async Task<User?> GetByIdAsync(int id)
-        {
-            return await _context.Users.FindAsync(id);
-        }*/
-
-        public async Task<List<Navigate>> GetChildrensByParentIdAsync(int id)
-        {
-            List<Navigate>? list = await _context.Navigates.ToListAsync();
-
-            if (list != null)
-                return list.FindAll((a) => a.ParentId == id);
-            
-
-            return null;
+            return await _context.Navigates.Where(i => i.ParentId == id).OrderBy(i=>i.OrderId).ToListAsync();
         }
 
         public async Task<List<Navigate>> GetParentsAsync()
         {
-            List<Navigate>? list = await _context.Navigates.ToListAsync();
-
-            if (list != null)
-                return list.FindAll((a) => a.ParentId == null);
-
-
-            return null;
+            return await _context.Navigates.Where(i => i.ParentId == null).OrderBy(i => i.OrderId).ToListAsync();
         }
 
-        /*public async Task SeveAsync(User user)
+        public async Task SeveAsync(Navigate nav)
         {
-            if (user.Id == default)
-                _context.Entry(user).State = EntityState.Added;
+            if (nav.Id == default)
+                _context.Entry(nav).State = EntityState.Added;
             else
-                _context.Entry(user).State = EntityState.Modified;
+                _context.Entry(nav).State = EntityState.Modified;
             await _context.SaveChangesAsync();
-        }*/
+        }
+        public async Task DeleteAsync(Navigate entity)
+        {
+            _context.Navigates.Remove(entity);
+            await _context.SaveChangesAsync();
+        }
     }
 }
