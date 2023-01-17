@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using System.Reflection.Metadata;
 using WebCurs2.Data.Domain.Entities;
 using WebCurs2.Data.Domain.Repositories.EntityFramework;
 
@@ -50,14 +51,31 @@ namespace WebCurs2.Data
                 {
                     try
                     {
-                        bool result = navRep.CreateAsync(el).Result;
-                        
+                        bool result = navRep.CreateAsync(el).Result; 
                     }
                     catch (Exception ex)
                     {
                         throw new Exception(ex.Message); 
                     }
- 
+                }
+            }
+
+            var optRep = new EFOptionRepository(context);
+            foreach (var el in DefaultOptions.AllOptions)
+            {
+                var nav = await optRep.GetByNameAsync(el.Name);
+
+                if (nav == null)
+                {
+                    try
+                    {
+                        bool result = optRep.CreateAsync(el).Result;
+                    }
+                    catch (Exception ex)
+                    {
+                        throw new Exception(ex.Message);
+                    }
+
                 }
             }
 
@@ -117,7 +135,6 @@ namespace WebCurs2.Data
         }
     }
 
-
     public static class DefaultNavigations
     {
         public static readonly Navigate Home = new Navigate
@@ -176,4 +193,29 @@ namespace WebCurs2.Data
             }
         }
     }
+
+    public static class DefaultOptions
+    {
+        public static readonly Option op1 = new Option
+        {
+            Name = "Phone",
+            Value = "0123456789",
+        };
+        public static readonly Option op2 = new Option
+        {
+            Name = "Email",
+            Value = "demo@example.com",
+        };
+
+        public static IEnumerable<Option> AllOptions
+        {
+            get
+            {
+                yield return op1;
+                yield return op2;
+                
+            }
+        }
+    }
+    
 }

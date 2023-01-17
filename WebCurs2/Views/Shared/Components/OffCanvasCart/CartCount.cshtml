@@ -1,0 +1,6 @@
+﻿@model ShopCartViewModel
+
+@if (Model.shopCart.ListShopItems.Count()>0)
+{
+    <span class="header-action-num">@Model.shopCart.ListShopItems.Count()</span>
+}

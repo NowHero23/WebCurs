@@ -51,5 +51,10 @@ namespace WebCurs2.Data.Domain.Repositories.EntityFramework
             _context.Navigates.Remove(entity);
             await _context.SaveChangesAsync();
         }
+
+        public Navigate? GetById(long id)
+        {
+            return _context.Navigates.FirstOrDefault(n => n.Id == id);
+        }
     }
 }

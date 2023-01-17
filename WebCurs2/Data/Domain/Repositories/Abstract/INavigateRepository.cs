@@ -8,15 +8,17 @@ namespace WebCurs2.Data.Domain.Repositories.Abstract
 {
     public interface INavigateRepository
     {
-        Task<List<Navigate>> GetAllAsync();
+        public Task<List<Navigate>> GetAllAsync();
 
-        Task<List<Navigate>> GetParentsAsync();
+        public Task<List<Navigate>> GetParentsAsync();
 
-        Task<List<Navigate>> GetChildrensByParentIdAsync(long id);
+        public Task<List<Navigate>> GetChildrensByParentIdAsync(long id);
 
-        Task<Navigate?> GetByNameAsync(string name);
+        public Task<Navigate?> GetByNameAsync(string name);
 
-        Task<bool> CreateAsync(Navigate entity);
+        public Task<bool> CreateAsync(Navigate entity);
+
+        public Navigate? GetById(long id);
 
         public Task SeveAsync(Navigate entity);
         public Task DeleteAsync(Navigate entity);

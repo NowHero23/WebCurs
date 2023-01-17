@@ -3,16 +3,18 @@
 <head>
     
     @await Html.PartialAsync("MetatagsPartial")
-
     @await Html.PartialAsync("CssPartial")
+
 </head>
 <body>
 
     <div class="main-wrapper" role="main">
         @await Html.PartialAsync("HeaderPartial")
 
-
         @await Html.PartialAsync("OffCanvasPartial")
+
+        @*@await Component.InvokeAsync("BreadCrumb",new BreadCrumbViewModel().endPoint=(WebCurs2.Data.Domain.Entities.Navigate)ViewData["NavPoint"])*@
+
 
 
         @RenderBody()

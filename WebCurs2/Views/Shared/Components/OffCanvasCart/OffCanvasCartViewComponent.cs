@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Html;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebCurs2.Data;
 using WebCurs2.Data.Domain.Repositories.Abstract;
@@ -13,23 +14,26 @@ namespace WebCurs2.Views.Shared.Components.OffCanvasCart
         private IProductRepository _productRep = new EFProductRepository(new Data.ApplicationDbContext(new DbContextOptions<Data.ApplicationDbContext>()));
         private ShopCart _shopCart;
 
-        
-        public OffCanvasCartViewComponent(IServiceProvider services)//ShopCart shopCart
+        public OffCanvasCartViewComponent(IServiceProvider services)
         {
-            //this._shopCart = shopCart;
             var context = services.GetService<ApplicationDbContext>();
             _shopCart = new ShopCart(context);
         }
 
-        public IViewComponentResult Invoke()
+        public IViewComponentResult Invoke(string text = "")
         {
             var items = _shopCart.GetShopItems();
             _shopCart.ListShopItems = items;
 
             var obj = new ShopCartViewModel { shopCart = _shopCart };
-
-            return View("Default", obj);
+            if (text == "CartCount")
+            {
+                return View("CartCount", obj);    
+            }
+            else
+            {
+                return View("Default", obj);
+            }
         }
-
     }
 }

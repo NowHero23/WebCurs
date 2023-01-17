@@ -1,6 +1,6 @@
 ﻿namespace WebCurs2.Data.Domain.Entities
 {
-    public class BlogCategori
+    public class ProductCategori
     {
         public long Id { get; set; }
         public string Name { get; set; }

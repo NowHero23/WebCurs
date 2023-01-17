@@ -1,127 +1,127 @@
 ﻿@using Microsoft.AspNetCore.Identity
 @*
 
-@inject SignInManager<IdentityUser> SignInManager
-@inject UserManager<IdentityUser> UserManager
-    
 *@
 
 <header>
-            <!-- Header top area start -->
-            <div class="header-top">
-                <div class="container">
-                    <div class="row justify-content-between align-items-center">
-                        <div class="col">
-                            <div class="welcome-text">
-                                <p>World Wide Completely Free Returns and Shipping</p>
-                            </div>
-                        </div>
-                        <div class="col d-none d-lg-block">
-                            <div class="top-nav">
-                                <ul>
-                                    <li><a href="tel:0123456789"><i class="fa fa-phone"></i> +012 3456 789</a></li>
-                                    <li><a href="mailto:demo@example.com"><i class="fa fa-envelope-o"></i> demo@example.com</a></li>
-                                    <partial name="_LoginPartial" />
-                                </ul>
-                            </div>
-                        </div>
+    <!-- Header top area start -->
+    <div class="header-top">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col">
+                    <div class="welcome-text">
+                        <p>World Wide Completely Free Returns and Shipping</p>
+                    </div>
+                </div>
+                <div class="col d-none d-lg-block">
+                    <div class="top-nav">
+                        <ul>
+                            <li><a href="tel:0123456789"><i class="fa fa-phone"></i> +012 3456 789</a></li>
+                            <li><a href="mailto:demo@example.com"><i class="fa fa-envelope-o"></i> demo@example.com</a></li>
+                            <partial name="_LoginPartial" />
+                        </ul>
                     </div>
                 </div>
             </div>
-            <!-- Header top area end -->
-            <!-- Header action area start -->
-            <div class="header-bottom  d-none d-lg-block">
-                <div class="container">
-                    <div class="row justify-content-between align-items-center">
-                        <div class="col-lg-3 col">
-                            <div class="header-logo">
-                                <a asp-area="" asp-controller="Home" asp-action="Index"><img src="~/images/logo/logo.png" alt="Site Logo" /></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 d-none d-lg-block">
-                            <div class="search-element">
-                                <form action="#">
-                                    <input type="text" placeholder="Search" />
-                                    <button><i class="pe-7s-search"></i></button>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col">
-                            <div class="header-actions">
-                                <!-- Single Wedge Start -->
-                                <a href="#offcanvas-wishlist" class="header-action-btn offcanvas-toggle">
-                                    <i class="pe-7s-like"></i>
-                                </a>
-                                <!-- Single Wedge End -->
-                                <a href="#offcanvas-cart" class="header-action-btn header-action-btn-cart offcanvas-toggle pr-0">
-                                    <i class="pe-7s-shopbag"></i>
-                                    <span class="header-action-num">01</span>
-                                    <!-- <span class="cart-amount">€30.00</span> -->
-                                </a>
-                                <a href="#offcanvas-mobile-menu" class="header-action-btn header-action-btn-menu offcanvas-toggle d-lg-none">
-                                    <i class="pe-7s-menu"></i>
-                                </a>
-                            </div>
-                        </div>
+        </div>
+    </div>
+    <!-- Header top area end -->
+    <!-- Header action area start -->
+    <div class="header-bottom  d-none d-lg-block">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-3 col">
+                    <div class="header-logo">
+                        <a asp-area="" asp-controller="Home" asp-action="Index"><img src="~/images/logo/logo.png" alt="Site Logo" /></a>
                     </div>
                 </div>
-            </div>
-            <!-- Header action area end -->
-
-            <!-- Header action area start -->
-            <div class="header-bottom d-lg-none sticky-nav style-1">
-                <div class="container">
-                    <div class="row justify-content-between align-items-center">
-                        <div class="col-lg-3 col">
-                            <div class="header-logo">
-                                <a asp-area="" asp-controller="Home" asp-action="Index"><img src="~/images/logo/logo.png" alt="Site Logo" /></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 d-none d-lg-block">
-                            <div class="search-element">
-                                <form action="#">
-                                    <input type="text" placeholder="Search" />
-                                    <button><i class="pe-7s-search"></i></button>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col">
-                            <div class="header-actions">
-                                <!-- Single Wedge Start -->
-                                <a href="#offcanvas-wishlist" class="header-action-btn offcanvas-toggle">
-                                    <i class="pe-7s-like"></i>
-                                </a>
-                                <!-- Single Wedge End -->
-                                <a href="#offcanvas-cart" class="header-action-btn header-action-btn-cart offcanvas-toggle pr-0">
-                                    <i class="pe-7s-shopbag"></i>
-                                    <span class="header-action-num">01</span>
-                                    <!-- <span class="cart-amount">€30.00</span> -->
-                                </a>
-                                <a href="#offcanvas-mobile-menu" class="header-action-btn header-action-btn-menu offcanvas-toggle d-lg-none">
-                                    <i class="pe-7s-menu"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Header action area end -->
-
-            @await Component.InvokeAsync("NavBar","Desctop")
-
-            
-            
-            
-            <div class="mobile-search-box d-lg-none">
-                <div class="container">
-                    <!-- mobile search start -->
-                    <div class="search-element max-width-100">
+                <div class="col-lg-6 d-none d-lg-block">
+                    <div class="search-element">
                         <form action="#">
                             <input type="text" placeholder="Search" />
                             <button><i class="pe-7s-search"></i></button>
                         </form>
                     </div>
-                    <!-- mobile search start -->
+                </div>
+                <div class="col-lg-3 col">
+                    <div class="header-actions">
+                        <!-- Single Wedge Start -->
+                        <a href="#offcanvas-wishlist" class="header-action-btn offcanvas-toggle">
+                            <i class="pe-7s-like"></i>
+                        </a>
+                        <!-- Single Wedge End -->
+                        <a href="#offcanvas-cart" class="header-action-btn header-action-btn-cart offcanvas-toggle pr-0">
+                            <i class="pe-7s-shopbag"></i>
+                            @await Component.InvokeAsync("OffCanvasCart","CartCount")
+                            
+                            @*<span class="header-action-num">01</span>*@
+                            <!-- <span class="cart-amount">€30.00</span> -->
+                        </a>
+                        <a href="#offcanvas-mobile-menu" class="header-action-btn header-action-btn-menu offcanvas-toggle d-lg-none">
+                            <i class="pe-7s-menu"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </header>
+        </div>
+    </div>
+    <!-- Header action area end -->
+
+    <!-- Header action area start -->
+    <div class="header-bottom d-lg-none sticky-nav style-1">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-3 col">
+                    <div class="header-logo">
+                        <a asp-area="" asp-controller="Home" asp-action="Index"><img src="~/images/logo/logo.png" alt="Site Logo" /></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <div class="search-element">
+                        <form action="#">
+                            <input type="text" placeholder="Search" />
+                            <button><i class="pe-7s-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-3 col">
+                    <div class="header-actions">
+                        <!-- Single Wedge Start -->
+                        <a href="#offcanvas-wishlist" class="header-action-btn offcanvas-toggle">
+                            <i class="pe-7s-like"></i>
+                        </a>
+                        <!-- Single Wedge End -->
+                        <a href="#offcanvas-cart" class="header-action-btn header-action-btn-cart offcanvas-toggle pr-0">
+                            <i class="pe-7s-shopbag"></i>
+
+                            @await Component.InvokeAsync("OffCanvasCart","CartCount")
+                            @*<span class="header-action-num">01</span>*@
+                            <!-- <span class="cart-amount">€30.00</span> -->
+                        </a>
+                        <a href="#offcanvas-mobile-menu" class="header-action-btn header-action-btn-menu offcanvas-toggle d-lg-none">
+                            <i class="pe-7s-menu"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header action area end -->
+
+    @await Component.InvokeAsync("NavBar","Desctop")
+
+            
+    <div class="mobile-search-box d-lg-none">
+        <div class="container">
+            <!-- mobile search start -->
+            <div class="search-element max-width-100">
+                <form action="#">
+                    <input type="text" placeholder="Search" />
+                    <button><i class="pe-7s-search"></i></button>
+                </form>
+            </div>
+            <!-- mobile search start -->
+        </div>
+    </div>
+</header>
+

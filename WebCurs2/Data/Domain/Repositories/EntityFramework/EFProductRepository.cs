@@ -16,9 +16,7 @@ namespace WebCurs2.Data.Domain.Repositories.EntityFramework
 
         public async Task<bool> CreateAsync(Product product)
         {
-            var tmp = _context.Products.AddAsync(product).IsCompletedSuccessfully;
-            SeveAsync(product);
-            return tmp;
+            return _context.Products.AddAsync(product).IsCompletedSuccessfully;
         }
 
         public async Task DeleteAsync(Product entity)

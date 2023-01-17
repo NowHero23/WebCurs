@@ -1,5 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http.Extensions;
+using Microsoft.AspNetCore.Mvc;
+using WebCurs2.Data;
 using WebCurs2.Data.Domain.Repositories.Abstract;
+using WebCurs2.Data.Domain.Repositories.EntityFramework;
 using WebCurs2.Models;
 using WebCurs2.ViewModels;
 
@@ -10,11 +13,14 @@ namespace WebCurs2.Controllers
         private readonly IProductRepository _productRep;
         private readonly ShopCart _shopCart;
 
-        public ShopCartController(IProductRepository productRep, ShopCart shopCart)
+        public ShopCartController(IServiceProvider services)
         {
-            this._productRep = productRep;
-            this._shopCart = shopCart;
+            //this._shopCart = shopCart;
+            var context = services.GetService<ApplicationDbContext>();
+            _shopCart = new ShopCart(context);
+            _productRep = new EFProductRepository(context);
         }
+
         public ViewResult Index()
         {
             var items = _shopCart.GetShopItems();
@@ -35,7 +41,6 @@ namespace WebCurs2.Controllers
             return RedirectToAction("Index");
         }
 
-        
 
     }
 }
