@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using System.Globalization;
 using System.Reflection.Metadata;
+using System.Runtime.InteropServices;
 using WebCurs2.Data.Domain.Entities;
 using WebCurs2.Data.Domain.Repositories.EntityFramework;
 
@@ -51,7 +53,7 @@ namespace WebCurs2.Data
                 {
                     try
                     {
-                        bool result = navRep.CreateAsync(el).Result; 
+                        await navRep.CreateAsync(el); 
                     }
                     catch (Exception ex)
                     {
@@ -69,7 +71,7 @@ namespace WebCurs2.Data
                 {
                     try
                     {
-                        bool result = optRep.CreateAsync(el).Result;
+                        await optRep.CreateAsync(el);
                     }
                     catch (Exception ex)
                     {
@@ -79,8 +81,38 @@ namespace WebCurs2.Data
                 }
             }
 
+            context.SaveChanges();
 
-            context.SaveChangesAsync();
+            var prodCatRep = new EFProductCategoryRepository(context);
+            foreach (var el in DefaultProductCategories.AllProductCategories)
+            {
+                ProductCategory? cat = prodCatRep.GetByName(el.Name);
+
+                if (cat == null)
+                {
+                    await prodCatRep.CreateAsync(el);
+                    await context.SaveChangesAsync();
+                }
+                cat = prodCatRep.GetByName(el.Name);
+                Console.WriteLine(cat);
+            }
+            
+
+            var imgRep = new EFProductImageRepository(context);
+            foreach (var el in DefaultImages.AllProductImage)
+            {
+                var img = imgRep.GetByUrl(el.Url);
+
+                if (img == null)
+                {
+                    await imgRep.CreateAsync(el);
+                    await context.SaveChangesAsync();
+                }
+            }
+
+            
+
+            context.SaveChanges();
         }
     }
 
@@ -196,24 +228,113 @@ namespace WebCurs2.Data
 
     public static class DefaultOptions
     {
-        public static readonly Option op1 = new Option
+        public static readonly Option phone = new Option
         {
             Name = "Phone",
             Value = "0123456789",
         };
-        public static readonly Option op2 = new Option
+        public static readonly Option email = new Option
         {
             Name = "Email",
             Value = "demo@example.com",
         };
+        public static readonly Option address = new Option
+        {
+            Name = "Address",
+            Value = "Your Address Goes Here.",
+        };
+        public static readonly Option cultureInfo = new Option
+        {
+            Name = "CultureInfo",
+            Value = "en-US",
+        };
+        
 
         public static IEnumerable<Option> AllOptions
         {
             get
             {
-                yield return op1;
-                yield return op2;
+                yield return phone;
+                yield return email;
+                yield return address;
+                yield return cultureInfo;
+            }
+        }
+    }
+
+    public static class DefaultProductCategories
+    {
+        public static readonly ProductCategory Category1 = new ProductCategory
+        {
+            Name = "Phone",
+            Description = "Phone",
+            Count = 0
+
+        };
+        public static readonly ProductCategory Category2 = new ProductCategory
+        {
+            Name = "Accessories",
+            Description = "Accessories",
+            Count = 0
+
+        };
+
+        public static IEnumerable<ProductCategory> AllProductCategories
+        {
+            get
+            {
+                yield return Category1;
+                yield return Category2;
+               
+            }
+        }
+    }
+
+    public static class DefaultProducts
+    {
+        public static readonly Product Product1 = new Product
+        {
+            Title = "Phone",
+            Description = "Phone",
+            IsNew = true,
+            IsSale = false,
+            DiscountPercentage = 0,
+            Price = 100,
+            OldPrice = -1,
+            ProductCategoryId = 1,
+            Count = 0,
+            SKU = "1hg2-1"
+        };
+        
+
+        public static IEnumerable<Product> AllProducts
+        {
+            get
+            {
+                yield return Product1;
                 
+
+            }
+        }
+    }
+    public static class DefaultImages
+    {
+        public static readonly ProductImage img1 = new ProductImage
+        {
+            Url = @"/images/product-image/1.webp",
+            Alt = "Default picture",
+            ProductId = 1,
+            OrderId= 1,
+        };
+
+
+        public static IEnumerable<ProductImage> AllProductImage
+        {
+            get
+            {
+                yield return img1;
+
+
             }
         }
     }

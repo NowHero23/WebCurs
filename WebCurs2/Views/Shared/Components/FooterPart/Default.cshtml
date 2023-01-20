@@ -1,6 +1,4 @@
-﻿@*
-    @using WebCurs2.Service
-*@
+﻿@model PartsViewModel
 
 <!-- Footer Area Start -->
 <div class="footer-area">
@@ -79,10 +77,10 @@
                             <h4 class="footer-herading">Contact Info</h4>
                             <div class="footer-links">
                                 <!-- News letter area -->
-                                <p class="address">Address: Your Address Goes Here.</p>
-                                <p class="phone">Phone/Fax:<a href="tel:0123456789"> 0123456789</a></p>
-                                <p class="mail">Email:<a href="mailto:demo@example.com"> demo@example.com</a></p>
-                                <p class="mail"><a href="https://demo@example.com"> demo@example.com</a></p>
+                                <p class="address">Address:@Model.Options.GetByName("Address").Value</p>
+                                <p class="phone">Phone/Fax:<a href="tel:@Model.Options.GetByName("Phone").Value">+@Model.Options.GetByName("Phone").Value</a></p>
+                                <p class="mail">Email:<a href="mailto:@Model.Options.GetByName("Email").Value">@Model.Options.GetByName("Email").Value</a></p>
+                                <p class="mail"><a href="@Model.Options.GetByName("Email").Value">@Model.Options.GetByName("Email").Value</a></p>  @* <-- Site *@
                                 <!-- News letter area  End -->
                             </div>
                         </div>

@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http.Extensions;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System.IO;
 using WebCurs2.Data;
 using WebCurs2.Data.Domain.Repositories.Abstract;
 using WebCurs2.Data.Domain.Repositories.EntityFramework;
@@ -8,14 +10,13 @@ using WebCurs2.ViewModels;
 
 namespace WebCurs2.Controllers
 {
-    public class ShopCartController : Controller
+    public class ShopController : Controller
     {
         private readonly IProductRepository _productRep;
         private readonly ShopCart _shopCart;
 
-        public ShopCartController(IServiceProvider services)
+        public ShopController(IServiceProvider services)
         {
-            //this._shopCart = shopCart;
             var context = services.GetService<ApplicationDbContext>();
             _shopCart = new ShopCart(context);
             _productRep = new EFProductRepository(context);
@@ -31,6 +32,20 @@ namespace WebCurs2.Controllers
             return View(obj);
         }
 
+        
+        public async Task<IActionResult> Details(long? id)
+        {
+            
+            if (id == null) return NotFound();
+            
+            var model = _productRep.GetById(id);
+            if (model == null) return NotFound();
+
+
+            //ViewData["PreviousPageUrl"] = Request.HttpContext.Request.Path;
+            return View("Details", model);
+        }
+
         public RedirectToActionResult AddToCart(long productId)
         {
             var item =_productRep.Products.FirstOrDefault(i=>i.Id== productId);
@@ -40,6 +55,8 @@ namespace WebCurs2.Controllers
             }
             return RedirectToAction("Index");
         }
+
+        
 
 
     }

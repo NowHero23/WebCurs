@@ -14,9 +14,9 @@ namespace WebCurs2.Data.Domain.Repositories.EntityFramework
         }
         IEnumerable<Option> IOptionRepository.Options => _context.Options;
 
-        public async Task<bool> CreateAsync(Option entity)
+        public async Task CreateAsync(Option entity)
         {
-            return _context.Options.AddAsync(entity).IsCompletedSuccessfully; 
+            await _context.Options.AddAsync(entity);
         }
 
         public async Task DeleteAsync(Option entity)

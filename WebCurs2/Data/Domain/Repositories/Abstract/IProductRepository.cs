@@ -1,4 +1,5 @@
-﻿using WebCurs2.Data.Domain.Entities;
+﻿using System.Linq.Expressions;
+using WebCurs2.Data.Domain.Entities;
 
 namespace WebCurs2.Data.Domain.Repositories.Abstract
 {
@@ -6,9 +7,18 @@ namespace WebCurs2.Data.Domain.Repositories.Abstract
     {
         public IEnumerable<Product> Products { get; }
 
-        public Product GetProductById(long id);
+        public List<Product> GetAll();
+        public Product? GetById(long? id);
+        public Product? GetBySKU(string SKU);
 
-        public Task<bool> CreateAsync(Product product);
+
+        public List<Product> GetProductsRange(int start, int end);
+        public List<Product> GetNewProductsRange(int start, int end);
+        public List<Product> GetFeaturedProductsRange(int start, int end);
+
+
+
+        public Task CreateAsync(Product product);
 
         public Task DeleteAsync(Product entity);
         public Task SeveAsync(Product entity);

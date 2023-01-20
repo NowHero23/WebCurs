@@ -29,10 +29,16 @@ namespace WebCurs2.Views.Shared.Components.BreadCrumb
             Navigate cursor = obj.endPoint;
             while (cursor.ParentId!=null)
             {
-                obj.NavPoints.Add(_navRep.GetById((long)cursor.ParentId));
+                var tmp = _navRep.GetById((long)cursor.ParentId);
+                if (tmp!=null)
+                {
+                    obj.NavPoints.Add(tmp);
+                }
                 cursor = obj.NavPoints.Last();
             }
             obj.NavPoints.Reverse();
+            obj.Navigates = new EFNavigateRepository(_context);
+            obj.Options = new EFOptionRepository(_context);
             return View("Default", obj);
         }
 

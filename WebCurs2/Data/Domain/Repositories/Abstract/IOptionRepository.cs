@@ -15,7 +15,7 @@ namespace WebCurs2.Data.Domain.Repositories.Abstract
         public Option? GetByName(string name);
         public Task<Option?> GetByNameAsync(string name);
 
-        public Task<bool> CreateAsync(Option entity);
+        public Task CreateAsync(Option entity);
 
         public Task SeveAsync(Option entity);
         public Task DeleteAsync(Option entity);

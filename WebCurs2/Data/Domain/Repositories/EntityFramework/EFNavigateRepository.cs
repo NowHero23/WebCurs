@@ -13,9 +13,9 @@ namespace WebCurs2.Data.Domain.Repositories.EntityFramework
             _context = context;
         }
 
-        public async Task<bool> CreateAsync(Navigate navigate)
+        public async Task CreateAsync(Navigate navigate)
         {
-            return _context.Navigates.AddAsync(navigate).IsCompletedSuccessfully;
+            await _context.Navigates.AddAsync(navigate);
         }
 
         public async Task<List<Navigate>> GetAllAsync()

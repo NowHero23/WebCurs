@@ -16,7 +16,7 @@ namespace WebCurs2.Data.Domain.Repositories.Abstract
 
         public Task<Navigate?> GetByNameAsync(string name);
 
-        public Task<bool> CreateAsync(Navigate entity);
+        public Task CreateAsync(Navigate entity);
 
         public Navigate? GetById(long id);
 

@@ -8,7 +8,7 @@ using WebCurs2.Data.Domain.Entities;
 using WebCurs2.Models;
 using NuGet.Packaging;
 
-namespace WebCurs2.Views.Shared.Components.Product
+namespace WebCurs2.Views.Shared.Components.NavBar
 {
     public class NavBarViewComponent : ViewComponent
     {

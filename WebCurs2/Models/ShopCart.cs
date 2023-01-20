@@ -29,7 +29,7 @@ namespace WebCurs2.Models
 
         public void AddToCart(Product product, long count=1)
         {
-            ShopCartItem? tmp = _context.ShopCartItems.Where(item => item.product == product && item.ShopCartId == ShopCartId).FirstOrDefault();
+            ShopCartItem? tmp = _context.ShopCartItems.Where(item => item.Product == product && item.ShopCartId == ShopCartId).FirstOrDefault();
 
             if (tmp != null)
             {
@@ -41,7 +41,7 @@ namespace WebCurs2.Models
                 _context.ShopCartItems.Add(new ShopCartItem
                 {
                     ShopCartId = ShopCartId,
-                    product = product,
+                    Product = product,
                     Count = count
                 });
             }
@@ -50,12 +50,12 @@ namespace WebCurs2.Models
         }
         public List<ShopCartItem> GetShopItems()
         {
-            return _context.ShopCartItems.Where(c =>c.ShopCartId== ShopCartId).Include(s=>s.product).ToList();
+            return _context.ShopCartItems.Where(c =>c.ShopCartId== ShopCartId).Include(s=>s.Product).ToList();
         }
 
         public void RemoveCart(Product product, long count = 1)
         {
-            ShopCartItem? tmp = _context.ShopCartItems.Where(item => item.product == product && item.ShopCartId == ShopCartId).FirstOrDefault();
+            ShopCartItem? tmp = _context.ShopCartItems.Where(item => item.Product == product && item.ShopCartId == ShopCartId).FirstOrDefault();
 
             if (tmp.Count == count)
             {

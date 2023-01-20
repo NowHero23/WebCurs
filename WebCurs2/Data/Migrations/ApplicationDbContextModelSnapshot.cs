@@ -8,7 +8,7 @@ using WebCurs2.Data;
 
 #nullable disable
 
-namespace WebCurs2.Data.Migrations
+namespace WebCurs2.Data.Domain.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     partial class ApplicationDbContextModelSnapshot : ModelSnapshot
@@ -270,33 +270,6 @@ namespace WebCurs2.Data.Migrations
                     b.ToTable("Options");
                 });
 
-            modelBuilder.Entity("WebCurs2.Data.Domain.Entities.ProdectImage", b =>
-                {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
-
-                    b.Property<long>("ProdectId")
-                        .HasColumnType("bigint");
-
-                    b.Property<long>("Rating")
-                        .HasColumnType("bigint");
-
-                    b.Property<string>("Url")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("alt")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("ProdectImages");
-                });
-
             modelBuilder.Entity("WebCurs2.Data.Domain.Entities.Product", b =>
                 {
                     b.Property<long>("Id")
@@ -304,9 +277,6 @@ namespace WebCurs2.Data.Migrations
                         .HasColumnType("bigint");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
-
-                    b.Property<long>("CategoryId")
-                        .HasColumnType("bigint");
 
                     b.Property<long>("Count")
                         .HasColumnType("bigint");
@@ -318,24 +288,22 @@ namespace WebCurs2.Data.Migrations
                     b.Property<int>("DiscountPercentage")
                         .HasColumnType("int");
 
-                    b.Property<string>("ImgAlt")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ImgSrc")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<bool>("IsNew")
                         .HasColumnType("bit");
 
                     b.Property<bool>("IsSale")
                         .HasColumnType("bit");
 
-                    b.Property<double?>("OldPrice")
+                    b.Property<double>("OldPrice")
                         .HasColumnType("float");
 
                     b.Property<double>("Price")
+                        .HasColumnType("float");
+
+                    b.Property<long>("ProductCategoryId")
+                        .HasColumnType("bigint");
+
+                    b.Property<double?>("Rating")
                         .HasColumnType("float");
 
                     b.Property<string>("SKU")
@@ -348,7 +316,93 @@ namespace WebCurs2.Data.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("ProductCategoryId");
+
                     b.ToTable("Products");
+                });
+
+            modelBuilder.Entity("WebCurs2.Data.Domain.Entities.ProductCategory", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+
+                    b.Property<long>("Count")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Url")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ProductCategories");
+                });
+
+            modelBuilder.Entity("WebCurs2.Data.Domain.Entities.ProductImage", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+
+                    b.Property<string>("Alt")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<long>("OrderId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("ProductId")
+                        .HasColumnType("bigint");
+
+                    b.Property<string>("Url")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("ProductImages");
+                });
+
+            modelBuilder.Entity("WebCurs2.Data.Domain.Entities.ProductRating", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"));
+
+                    b.Property<long>("ProductId")
+                        .HasColumnType("bigint");
+
+                    b.Property<int>("Rating")
+                        .HasMaxLength(1)
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("ProductRatings");
                 });
 
             modelBuilder.Entity("WebCurs2.Models.ShopCartItem", b =>
@@ -362,16 +416,16 @@ namespace WebCurs2.Data.Migrations
                     b.Property<long>("Count")
                         .HasColumnType("bigint");
 
+                    b.Property<long>("ProductId")
+                        .HasColumnType("bigint");
+
                     b.Property<string>("ShopCartId")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<long>("productId")
-                        .HasColumnType("bigint");
-
                     b.HasKey("Id");
 
-                    b.HasIndex("productId");
+                    b.HasIndex("ProductId");
 
                     b.ToTable("ShopCartItems");
                 });
@@ -427,15 +481,68 @@ namespace WebCurs2.Data.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("WebCurs2.Models.ShopCartItem", b =>
+            modelBuilder.Entity("WebCurs2.Data.Domain.Entities.Product", b =>
                 {
-                    b.HasOne("WebCurs2.Data.Domain.Entities.Product", "product")
-                        .WithMany()
-                        .HasForeignKey("productId")
+                    b.HasOne("WebCurs2.Data.Domain.Entities.ProductCategory", "ProductCategory")
+                        .WithMany("Products")
+                        .HasForeignKey("ProductCategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("product");
+                    b.Navigation("ProductCategory");
+                });
+
+            modelBuilder.Entity("WebCurs2.Data.Domain.Entities.ProductImage", b =>
+                {
+                    b.HasOne("WebCurs2.Data.Domain.Entities.Product", "Product")
+                        .WithMany("ProductImages")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("WebCurs2.Data.Domain.Entities.ProductRating", b =>
+                {
+                    b.HasOne("WebCurs2.Data.Domain.Entities.Product", "Product")
+                        .WithMany("ProductRatings")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("WebCurs2.Models.ShopCartItem", b =>
+                {
+                    b.HasOne("WebCurs2.Data.Domain.Entities.Product", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
+                });
+
+            modelBuilder.Entity("WebCurs2.Data.Domain.Entities.Product", b =>
+                {
+                    b.Navigation("ProductImages");
+
+                    b.Navigation("ProductRatings");
+                });
+
+            modelBuilder.Entity("WebCurs2.Data.Domain.Entities.ProductCategory", b =>
+                {
+                    b.Navigation("Products");
                 });
 #pragma warning restore 612, 618
         }

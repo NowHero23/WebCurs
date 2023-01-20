@@ -1,22 +1,23 @@
 ﻿@model WebCurs2.ViewModels.ProductViewModel
 
 @{
-    string link = "single-product/" + Model.ProductId;
+    string link = "shop/details/" + Model.Product.Id;
+    
+    
 }
-
 
 <div class="product">
 
     <span class="badges">
-        @if (@Model.DiscountPercentage!=null)
+        @if (@Model.Product.DiscountPercentage != 0)
         {
-            <span class="sale">-@Model.DiscountPercentage%</span> 
+            <span class="sale">-@Model.Product.DiscountPercentage%</span>
         }
-        @if (@Model.IsNew==true)
+        @if (@Model.Product.IsNew == true)
         {
             <span class="new">New</span>
         }
-        @if (@Model.IsSale==true)
+        @if (@Model.Product.IsSale == true)
         {
             <span class="new">Sale</span>
         }
@@ -24,26 +25,38 @@
     
     <div class="thumb">
         <a href="@link" class="image">
-            <img src="~/images/product-image/1.webp" alt="Product" />
-            <img class="hover-image" src="@Model.ImgSrc" alt="Product" />
+            @if (Model.Product.ProductImages.FirstOrDefault()!=null)
+            {
+                <img src="@Model.Product.ProductImages.First().Url" alt="@Model.Product.ProductImages.First().Alt" />
+                <img class="hover-image" src="@Model.Product.ProductImages.First().Url" alt="@Model.Product.ProductImages.First().Alt" />
+            }
+            else
+            {
+                <img src="/images/product-image/1.webp" alt="Product" />
+                <img class="hover-image" src="/images/product-image/1.webp" alt="Product" />
+            }
+            
+            
         </a>
     </div>
     <div class="content">
-        <span class="category"><a href="@Model.CategoryLink">@Model.Category</a></span>  
-        <h5 class="title"><a href="@link">@Model.Title
+        <span class="category"><a href="@(Model.Product.ProductCategory.Url ?? "")">@Model.Product.ProductCategory.Name</a></span>
+        <h5 class="title">
+            <a asp-controller="Shop" asp-action="Details" asp-route-id="@Model.Product.Id">
+                @Model.Product.Title
             </a>
         </h5>
         <span class="price">
-            @if (@Model.OldPrice!=null)
+            @if (@Model.Product.OldPrice != 0)
             {
-                <span class="old">@Model.OldPrice @Model.Currency</span>
+                <span class="old">@Model.Product.OldPrice.ToString("C")</span>
             }
             
-            <span class="new">@Model.Price.ToString("c") @Model.Currency</span>
+            <span class="new">@Model.Product.Price.ToString("C")</span>
         </span>
     </div>
     <div class="actions">
-        <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart"><i
+        <button title="Add To Cart" class="action add-to-cart" data-bs-toggle="modal" data-bs-target="#exampleModal-Cart" ><i
             class="pe-7s-shopbag"></i></button>
         <button class="action wishlist" title="Wishlist" data-bs-toggle="modal" data-bs-target="#exampleModal-Wishlist"><i
                 class="pe-7s-like"></i></button>

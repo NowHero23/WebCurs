@@ -11,7 +11,8 @@ namespace WebCurs2
         {
             var host = CreateHostBuilder(args).Build();
             using var scope = host.Services.GetRequiredService<IServiceScopeFactory>().CreateScope();
-            SeedData.EnsureSeedData(scope.ServiceProvider);
+            SeedData.EnsureSeedData(scope.ServiceProvider).Wait();
+            
             host.Run();
         }
 

@@ -1,4 +1,11 @@
-﻿<div class="offcanvas-overlay"></div>
+﻿@using Microsoft.AspNetCore.Identity
+
+@model PartsViewModel
+@*
+
+*@
+
+<div class="offcanvas-overlay"></div>
 
 <!-- OffCanvas Cart Start -->
     @await Component.InvokeAsync("OffCanvasCart")
@@ -9,8 +16,8 @@
     <button class="offcanvas-close"></button>
     <div class="user-panel">
         <ul>
-            <li><a href="tel:0123456789"><i class="fa fa-phone"></i> +012 3456 789</a></li>
-            <li><a href="mailto:demo@example.com"><i class="fa fa-envelope-o"></i> demo@example.com</a></li>
+            <li><a href="tel:@Model.Options.GetByName("Phone").Value"><i class="fa fa-phone"></i>+@Model.Options.GetByName("Phone").Value</a></li>
+            <li><a href="mailto:@Model.Options.GetByName("Email").Value"><i class="fa fa-envelope-o"></i>@Model.Options.GetByName("Email").Value</a></li>
             <li><a href="my-account.html"><i class="fa fa-user"></i>Account</a></li>
         </ul>
     </div>

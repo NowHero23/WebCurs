@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace WebCurs2.Data.Domain.Entities
 {
@@ -24,20 +26,31 @@ namespace WebCurs2.Data.Domain.Entities
         public int DiscountPercentage { get; set; }
         [Required]
         public double Price { get; set; }
-        public double? OldPrice { get; set; }
 
-
-        [Required]
-        public long CategoryId { get; set; }
-
-        public string ImgSrc { get; set; }
-        public string ImgAlt { get; set; }
-
-        [Required]
         [DefaultValue(0)]
-        public long Count { get; set; }
+        public double OldPrice { get; set; }
 
+
+        [Required]
+        [ForeignKey("ProductCategory")]
+        public long ProductCategoryId { get; set; }
+        public ProductCategory ProductCategory { get; set; }
+
+        [Required]
+        public long Count { get; set; }
+        
         public string SKU { get; set; }
+
+
+        [ForeignKey("ProductId")]
+        public ICollection<ProductImage> ProductImages { get; set; }
+
+
+        [ForeignKey("ProductId")]
+        public ICollection<ProductRating> ProductRatings { get; set; }
+
+        
+        public double? Rating { get; set; }
     }
 
 }

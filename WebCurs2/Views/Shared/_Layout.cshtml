@@ -1,5 +1,12 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+﻿@using Microsoft.EntityFrameworkCore;
+@using WebCurs2.Data.Domain.Repositories.EntityFramework;
+@using WebCurs2.Data;
+@{
+    var lang = new EFOptionRepository(new ApplicationDbContext(new DbContextOptions<ApplicationDbContext>())).GetByName("CultureInfo").Value;
+}
+
+<!DOCTYPE html>
+<html lang="@lang">
 <head>
     
     @await Html.PartialAsync("MetatagsPartial")
@@ -9,19 +16,18 @@
 <body>
 
     <div class="main-wrapper" role="main">
-        @await Html.PartialAsync("HeaderPartial")
 
-        @await Html.PartialAsync("OffCanvasPartial")
+        @await Component.InvokeAsync("HeaderPart")
 
+        @await Component.InvokeAsync("OffCanvas")
+
+        
         @*@await Component.InvokeAsync("BreadCrumb",new BreadCrumbViewModel().endPoint=(WebCurs2.Data.Domain.Entities.Navigate)ViewData["NavPoint"])*@
-
 
 
         @RenderBody()
 
-
-        @await Html.PartialAsync("FooterPartial")
-
+        @await Component.InvokeAsync("FooterPart")
     </div>
 
 

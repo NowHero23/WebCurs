@@ -22,13 +22,13 @@
 
                     @foreach (var el in Model.shopCart.ListShopItems)
                     {
-                        var tmpLink = link + el.product.Id;
+                        var tmpLink = link + el.Product.Id;
 
                         <li>
-                            <a href="@tmpLink" class="image"><img src="@el.product.ImgSrc" alt="@el.product.ImgAlt"></a>
+                            <a href="@tmpLink" class="image"><img src="@el.Product.ProductImages.FirstOrDefault()" alt="@el.Product.ProductImages.FirstOrDefault()"></a>
                             <div class="content">
-                                <a href="@tmpLink" class="title">@el.product.Title</a>
-                                <span class="quantity-price">@el.Count x <span class="amount">@el.product.Price.ToString("c")</span></span>
+                                <a href="@tmpLink" class="title">@el.Product.Title</a>
+                                <span class="quantity-price">@el.Count x <span class="amount">@el.Product.Price.ToString("c")</span></span>
                                 @*<button asp-controller="ShopCardcontroller" asp-action=""></button>*@
                                 <a href="a" class="remove">×</a>
                             </div>

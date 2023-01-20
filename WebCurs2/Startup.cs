@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using System.Globalization;
 using WebCurs2.Data;
+using WebCurs2.Data.Domain.Repositories.EntityFramework;
 using WebCurs2.Models;
 
 namespace WebCurs2
@@ -65,6 +67,13 @@ namespace WebCurs2
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseSession();
+
+
+            CultureInfo cultureInfo = new CultureInfo(new EFOptionRepository(new ApplicationDbContext(new DbContextOptions<ApplicationDbContext>())).GetByName("CultureInfo").Value);
+            cultureInfo.NumberFormat.CurrencySymbol = "$";
+
+            CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
+            CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
 
 
             app.UseRouting();
